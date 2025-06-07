@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="node.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="maincontainer">
+      <header>
+        <span style="color: yellow">Developer:&nbsp;</span>
+        <a
+          href="https://www.linkedin.com/in/aryan-chandra-649135224/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+          Aryan Chandra</a
+        >
+      </header>
+      <div class="container">
+        <h1>My Tasks</h1>
+        <input type="text" placeholder="Add a task..." id="task" />
+        <button id="todoBtn" onclick="createTask()">Add</button>
+        <br /><br />
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Task</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="displaytask"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
